@@ -1,7 +1,7 @@
 {
   "name": "halo-api-cache",
   "version": "1.0.0",
-  "description": "Halo 5 API made easy.",
+  "description": "Halo 5 API caching made easy.",
   "main": "src/server.ts",
   "dependencies": {
     "@types/express": "^4.17.2",
@@ -19,9 +19,9 @@
   "scripts": {
     "tsc": "tsc",
     "start": "cd src && tsc && node ../build/server.js",
-    "build": "cd src && tsc",
+    "build": "cd src && tsc && cd ../ && cp -r src/cache build/",
     "test": "cd test && node client.js",
-    "build-server": "cd src && tsc && cd ../ && cp -r node_modules ../html"
+    "build-local": "cd src && tsc"
   },
   "author": "Nicolaas Nel",
   "license": "ISC"
