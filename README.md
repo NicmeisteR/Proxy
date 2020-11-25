@@ -1,11 +1,6 @@
-# Halo-Api-Cache
-Personal Express API to make using the Halo 5 API easier.
+# Proxy
+Personal Express API to act as a proxy intercepter for any sites that are cors enforced.
 
-# Live Version
-A live version is hosted on haloapi.nicmeister.cloud
-
-## How To:
-Simply do a REST API POST call with the below body to
 # Setup
 
 ## Build
